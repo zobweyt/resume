@@ -57,5 +57,5 @@
 == #config.achievements.title
 
 #for achievement in config.achievements.items [
-  *#achievement.title*, #achievement.role #h(1fr) #str(achievement.year) \
+  *#achievement.name*, #achievement.role #h(1fr) #str(achievement.year) \
 ]
