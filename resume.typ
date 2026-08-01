@@ -15,10 +15,6 @@
 
 #align(center)[
   #text(size: 23pt, weight: "bold")[#smallcaps(config.name)] \
-  #if "title" in config and config.title != "" [
-    #v(-0.15em)
-    #text(size: 11pt, style: "italic")[#config.title] \
-  ]
   #v(-0.25em)
   #link("mailto:" + config.email)[#config.email] |
   #link("https://" + config.github)[#config.github] |
