@@ -23,19 +23,19 @@ skills:
   title: "Навыки"
   items:
     - category: "Языки"
-      value: "JavaScript, TypeScript, HTML5, CSS3 (SASS, LESS, TailwindCSS, UnoCSS), Python, SQL, Typst, LaTeX"
+      list: "JavaScript, TypeScript, HTML5, CSS3 (SASS, LESS, TailwindCSS, UnoCSS), Python, SQL, Typst, LaTeX"
 
     - category: "Frontend"
-      value: "React (Next.js, Zustand), SolidJS (Solid Start), Angular (Taiga UI), Astro, Zod, Tanstack Query, Figma"
+      list: "React (Next.js, Zustand), SolidJS (Solid Start), Angular (Taiga UI), Astro, Zod, Tanstack Query, Figma"
 
     - category: "Backend"
-      value: "Node.js, Bun, Deno, ElysiaJS, FastAPI, Pydantic, Jinja2, Alembic, SQLAlchemy, SQLite, PostgreSQL, Redis"
+      list: "Node.js, Bun, Deno, ElysiaJS, FastAPI, Pydantic, Jinja2, Alembic, SQLAlchemy, SQLite, PostgreSQL, Redis"
 
     - category: "DevOps"
-      value: "Linux, Docker, Docker Compose, Nginx, Nix, Git, GitHub Actions, GitLab CI/CD, Grafana, Prometheus"
+      list: "Linux, Docker, Docker Compose, Nginx, Nix, Git, GitHub Actions, GitLab CI/CD, Grafana, Prometheus"
 
     - category: "Тестирование"
-      value: "Storybook, Vitest, Playwright, pytest"
+      list: "Storybook, Vitest, Playwright, pytest"
 
 projects:
   title: "Проекты"
@@ -91,18 +91,18 @@ projects:
 achievements:
   title: "Достижения"
   items:
-    - name: "Международная олимпиада по промышленной разработке PROD"
+    - title: "Международная олимпиада по промышленной разработке PROD"
       role: "победитель, лучшая команда"
       year: 2025
 
-    - name: "Национальная технологическая олимпиада, автоматизация бизнес-процессов"
+    - title: "Национальная технологическая олимпиада, автоматизация бизнес-процессов"
       role: "призёр"
       year: 2025
 
-    - name: "Хакатон Международной олимпиады по промышленной разработке PROD"
+    - title: "Хакатон Международной олимпиады по промышленной разработке PROD"
       role: "лучшая команда"
       year: 2025
 
-    - name: "Хакатон HSE Vibe Hack"
+    - title: "Хакатон HSE Vibe Hack"
       role: "лучшая команда"
       year: 2025
