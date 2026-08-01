@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: 
+    branches:
       - main
 
 permissions:
@@ -24,11 +24,12 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v5
 
-      - name: Compile PDF
-        run: typst compile resume.typ "Резюме Газиев Никита Frontend.pdf"
-
-      - name: Create redirect
-        run: echo '<meta http-equiv="refresh" content="0; url=./Резюме Газиев Никита Frontend.pdf">' > index.html
+      - name: Compile PDF and Create Redirect
+        run: |
+          FILENAME="$(yq '.title' config.yaml).pdf"
+          
+          typst compile resume.typ "$FILENAME"
+          echo "<meta http-equiv=\"refresh\" content=\"0; url=./${FILENAME}\">" > index.html
 
       - name: Upload PDF artifact
         uses: actions/upload-pages-artifact@v5
