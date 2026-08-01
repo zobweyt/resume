@@ -33,7 +33,7 @@
 == #config.skills.title
 
 #for skill in config.skills.items [
-  *#skill.category*: #skill.value \
+  *#skill.category*: #skill.list \
 ]
 
 == #config.projects.title
@@ -53,5 +53,5 @@
 == #config.achievements.title
 
 #for achievement in config.achievements.items [
-  *#achievement.name*, #achievement.role #h(1fr) #str(achievement.year) \
+  *#achievement.title*, #achievement.role #h(1fr) #str(achievement.year) \
 ]
