@@ -17,7 +17,7 @@
   #text(size: 23pt, weight: "bold")[#smallcaps(config.name)] \
   #v(-0.25em)
   #link("mailto:" + config.email)[#config.email] |
-  #link("https://" + config.telegram)[#config.website] |
+  #link("https://" + config.website)[#config.website] |
   #link("https://" + config.github)[#config.github] |
   #link("https://" + config.telegram)[#config.telegram]
 ]
