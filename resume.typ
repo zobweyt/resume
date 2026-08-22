@@ -27,7 +27,7 @@
 #for education in config.education.items [
   #block()[
     *#education.institution* #h(1fr) #education.location \
-    _ #education.degree _ #h(1fr) #education.date
+    #education.degree #h(1fr) #education.date
   ]
 ]
 
