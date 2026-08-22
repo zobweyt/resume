@@ -31,6 +31,12 @@
   ]
 ]
 
+== #config.achievements.title
+
+#for achievement in config.achievements.items [
+  *#achievement.title*, #achievement.role #h(1fr) #str(achievement.year) \
+]
+
 == #config.skills.title
 
 #for skill in config.skills.items [
@@ -49,10 +55,4 @@
       - #bullet
     ]
   ]
-]
-
-== #config.achievements.title
-
-#for achievement in config.achievements.items [
-  *#achievement.title*, #achievement.role #h(1fr) #str(achievement.year) \
 ]
