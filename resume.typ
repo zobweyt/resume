@@ -1,6 +1,6 @@
 #let config = yaml("config.yaml")
 
-#set page(paper: "a4", margin: 1.25cm)
+#set page(paper: "a4", margin: 1cm)
 #set text(font: "New Computer Modern", lang: config.lang, size: 10pt)
 #set par(justify: true, leading: 0.5em)
 
@@ -47,10 +47,8 @@
 
 #for project in config.projects.items [
   #block()[
-    *#project.name* | _ #project.tech _ #h(1fr) #project.date \
+    * #link("https://" + project.link)[#project.name] * | #project.tech #h(1fr) #project.date \
     #v(-0.6em)
-    #text(size: 9pt)[#link("https://" + project.link)[#project.link]]
-    #v(-0.4em)
     #for bullet in project.bullets [
       - #bullet
     ]
